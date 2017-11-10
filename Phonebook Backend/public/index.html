@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact APP</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="http://flatlogic.github.io/awesome-bootstrap-checkbox/demo/build.css"/>
+    <link rel="stylesheet" href="http://flatlogic.github.io/awesome-bootstrap-checkbox/bower_components/Font-Awesome/css/font-awesome.css"/>
+</head>
+
+    <body>
+
+    <div style="width : 95%; margin: 10px; border: solid; border-color: gainsboro">
+
+       <p style="margin-left: 30px"><b>PHONEBOOK</b> </p>
+
+        <div id="contacts_active" style="padding: 10px; margin-left: 30px" align="center">
+            
+        </div>
+        <p>Add a new Contact or Update</p>
+        <div align="left" id="formDiv">
+            <form id="form1" method="post" action="#" >
+                <br>
+                NAME:
+                <input type="text" name="name" id="name" placeholder="name">
+                <br>
+                MOBO:
+                <input type="text" name="mobileOffice" id="mobileOffice" placeholder="mobileOffice">
+                <br>
+                MOBP:
+                <input type="text" name="mobilePersonal" id="mobilePersonal" placeholder="mobilePersonal">
+                <br>
+                ADDR:
+                <input type="text" name="address" id="address" placeholder="address">
+                <br>
+                <input type="button" id="create" value="Create" onclick="addContactAJAX()" >
+            </form>
+        </div>
+        <div id="editDIV">
+
+        </div>
+
+    </div>
+    <script src="/script.js" type="text/javascript"></script>
+    </body>
+</html>
